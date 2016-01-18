@@ -3,17 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Milkyway Planets</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1>Milkyway Planets</h1>
-	<nav>
-		<ul>
-			<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-			<li><a href="{{site.baseurl}}/news.html">News</a></li>
-		</ul>
-	</nav>
+	<header>
+		<h1>Milkyway Planets</h1>
+		{% include nav.html navclass='nav-top' %}
+	</header>
+
 	
 	{{ content }}
-	
+	<footer>
+		{% include nav.html navclass='nav-bottom' %}
+		<p>&copy; Milkyway Planets 2015</p>
+	</footer>
 </body>
 </html>
