@@ -4,7 +4,7 @@ layout: news
 
 <h1>News</h1>
 <ul>
-	{% for news in site.categories.news limit: 2 %}
+	{% for news in site.categories.recently-discovered limit: 2 %}
 	<li>
 		<a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a><br>
 		<img src="{{news.source}}" alt="">

@@ -3,3 +3,12 @@ layout: default
 ---
 	<h1>Milkyway Planets news</h1>
 	<p>this is all the current discovered planets</p>
+	<p>Hello World</p>
+	<ul>
+		{% for planets in site.categories.planet-types %}
+		<li>
+			<a href="">{{planets.title}}</a>
+			<p>{{planets.content}}</p>
+		</li>
+		{% endfor %}
+	</ul>
